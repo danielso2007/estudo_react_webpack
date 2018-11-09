@@ -1,0 +1,23 @@
+{
+  "name": "estudo_react_webpack",
+  "version": "0.1.0",
+  "description": "Estudo de React",
+  "main": "index.js",
+  "scripts": {
+    "release": "standard-version",
+    "release_version": "standard-version release -- --release-as 0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielso2007/estudo_react_webpack.git"
+  },
+  "author": "Daniel Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielso2007/estudo_react_webpack/issues"
+  },
+  "homepage": "https://github.com/danielso2007/estudo_react_webpack#readme",
+  "devDependencies": {
+    "standard-version": "^4.4.0"
+  }
+}
