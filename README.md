@@ -20,9 +20,13 @@ https://www.todoespacoonline.com/w/2015/06/usuarios-grupos-e-permissoes-no-linux
 https://www.mongodb.com/download-center/community
 
 Copiar Node em /opt/mongodb: `sudo mv node /opt/mongodb`
+
 Modificar environment: `sudo nano /etc/environment`
+
 Adicionar no final: `/etc/mongodb/bin`
+
 Compilando a modificação: `source /etc/environment`
+
 Criar pasta /data/db: `/data/db`
 
 Adicionar a pasta ao grupo do usuário:
@@ -46,8 +50,11 @@ https://nodemon.io/
 # Variáveis de ambiente Linux: Exemplo instalando Node.js:
 
 Copiar Node em /opt/node: `sudo mv node /opt/node`
+
 Modificar environment: `sudo nano /etc/environment`
+
 Adicionar no final: `/etc/node/bin`
+
 Compilando a modificação: `source /etc/environment`
 
 
@@ -111,4 +118,5 @@ npm run release -- --release-as X.X.X
 
 ### Referências:
 [Standard Version](https://github.com/conventional-changelog/standard-version/blob/master/README.md)
+
 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)
