@@ -1,6 +1,6 @@
 {
   "name": "estudo_react_webpack",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Estudo de React",
   "main": "index.js",
   "scripts": {
