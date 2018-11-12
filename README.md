@@ -77,6 +77,14 @@ https://webpack.js.org/
 
 `npm i --save-dev webpack webpack-dev-server`
 
+# Node-Restful
+
+https://github.com/baugarten/node-restful
+
+# Servidor PM2
+
+http://pm2.keymetrics.io/
+
 # Padrão de mensagem de commit (CHANGELOG automatizados):
 
 O projeto terá o controle de versão e a geração do CHANGELOG automatizados com mensagens de confirmação  convencionais seguindo o padrão estabelecido por este documento.
