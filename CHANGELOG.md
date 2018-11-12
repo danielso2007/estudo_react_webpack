@@ -28,13 +28,3 @@ All notable changes to this project will be documented in this file. See [standa
 * Passando props para o componente. ([e68c0b6](https://github.com/danielso2007/estudo_react_webpack/commit/e68c0b6))
 * Primeiro exemplo de react. ([6724c6e](https://github.com/danielso2007/estudo_react_webpack/commit/6724c6e))
 * Usando vários compomentes e componentes filhos. ([74b6c41](https://github.com/danielso2007/estudo_react_webpack/commit/74b6c41))
-
-
-
-<a name="0.1.0"></a>
-# 0.1.0 (2018-11-09)
-
-
-### Features
-
-* **webpack:** Iniciando estudo de webpack ([f79eed2](https://github.com/danielso2007/estudo_react_webpack/commit/f79eed2))
