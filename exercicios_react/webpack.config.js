@@ -13,6 +13,9 @@ module.exports = {
         port: 8080,
         contentBase: './public'
     },
+    resolve: {
+        extensions: ['.js', '.jsx']
+    },
     plugins: [
         new MiniCssExtractPlugin({
             filename: devMode ? '[name].css' : '[name].[hash].css',
