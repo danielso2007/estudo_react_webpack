@@ -1,5 +1,6 @@
 const webpack = require('webpack');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const devMode = process.env.NODE_ENV !== 'development';
 
 module.exports = {
     entry: './ex/index.js',
@@ -13,25 +14,30 @@ module.exports = {
         contentBase: './public'
     },
     plugins: [
-        new ExtractTextPlugin('app.css')
+        new MiniCssExtractPlugin({
+            filename: devMode ? '[name].css' : '[name].[hash].css',
+            chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
+        })
     ],
     module: {
-        rules: [{
-            test: /.js?$/,
-            exclude: /(node_modules|bower_components)/,
-            use: {
-                loader: 'babel-loader',
-                options: {
-                    presets: ['@babel/preset-env', '@babel/preset-react'],
-                    plugins: ['transform-object-rest-spread']
+        rules: [
+                {
+                    test: /.js?$/,
+                    exclude: /(node_modules|bower_components)/,
+                    use: {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['@babel/preset-env', '@babel/preset-react'],
+                            plugins: ['transform-object-rest-spread']
+                        },
+                    }
                 },
-            }
-        },
-        {
-            test: /\.css$/,
-            use: {
-                loader: ExtractTextPlugin.extract({fallback: "style-loader", use: "css-loader"})
-            }
-        }]
+                {
+                    test: /\.(sa|sc|c)ss$/,
+                    use: [
+                        devMode ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader'
+                    ]
+                }
+        ]
     }
 };
