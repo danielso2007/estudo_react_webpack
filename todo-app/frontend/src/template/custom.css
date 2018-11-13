@@ -8,9 +8,18 @@
 }
 
 .tableActions {
-    width: 105px;
+    width: 20%;
 }
 
 .todoForm {
     padding-bottom: 60px;
+}
+
+.text-white {
+    color: white;
+}
+
+.small_page_haeader {
+    color: #a2a3a2;
+    font-size: 75%;
 }

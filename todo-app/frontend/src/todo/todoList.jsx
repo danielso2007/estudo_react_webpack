@@ -6,7 +6,7 @@ export default props => {
     const list = props.list || [];
     return list.map(todo => (
       <tr key={todo._id}>
-        <td className={todo.done ? "markedAsDone" : ""}>{todo.description}</td>
+        <td className={todo.done ? "markedAsDone align-middle" : "align-middle"}>{todo.description}</td>
         <td>
           <IconButton
             style="success"
@@ -15,7 +15,7 @@ export default props => {
             onClick={() => props.handleMarkAsDone(todo)}
           />
           <IconButton
-            style="warning"
+            style="warning text-white"
             icon="undo"
             hide={!todo.done}
             onClick={() => props.handleMarkAsPending(todo)}
@@ -32,14 +32,16 @@ export default props => {
   };
 
   return (
-    <table className="table">
-      <thead>
-        <tr>
-          <th>Descrição</th>
-          <th className="tableActions">Ações</th>
-        </tr>
-      </thead>
-      <tbody>{renderRows()}</tbody>
-    </table>
+    <div className="table-responsive-sm">
+      <table className="table table-hover">
+        <thead className="thead-dark">
+          <tr>
+            <th>Descrição</th>
+            <th className="tableActions">Ações</th>
+          </tr>
+        </thead>
+        <tbody>{renderRows()}</tbody>
+      </table>
+    </div>
   );
 };

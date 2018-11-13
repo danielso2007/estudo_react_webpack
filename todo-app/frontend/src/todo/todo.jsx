@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { withSwalInstance } from 'sweetalert2-react';
+import swal from 'sweetalert2';
 import axios from "axios";
 
 import PageHeader from "../template/pageHeader";
@@ -6,8 +8,10 @@ import TodoForm from "./todoForm";
 import TodoList from "./todoList";
 
 const URL = "http://localhost:3003/api/todos";
+const SweetAlert = withSwalInstance(swal);
 
 export default class Todo extends Component {
+
   constructor(props) {
     super(props);
     this.state = { description: "", list: [] };
@@ -47,9 +51,10 @@ export default class Todo extends Component {
   }
 
   handleRemove(todo) {
-    axios
-      .delete(`${URL}/${todo._id}`)
-      .then(resp => this.refresh(this.state.description));
+    axios.delete(`${URL}/${todo._id}`).then(resp => {
+      this.setState({ show: true });
+      this.refresh(this.state.description);
+    });
   }
 
   handleMarkAsDone(todo) {
@@ -84,6 +89,13 @@ export default class Todo extends Component {
           handleMarkAsDone={this.handleMarkAsDone}
           handleMarkAsPending={this.handleMarkAsPending}
           handleRemove={this.handleRemove}
+        />
+        <SweetAlert
+          show={this.state.show}
+          title=""
+          type='success'
+          text="Tarefa removida com sucesso!"
+          onConfirm={() => this.setState({ show: false })}
         />
       </div>
     );
