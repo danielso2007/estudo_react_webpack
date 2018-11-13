@@ -121,7 +121,7 @@ _Algumas regras:_
 ### Gerando o CHANGELOG do projeto
 
 ```sh
-npm run release -- --release-as X.X.X
+npm run release -- --release-as 1.0.0
 ```
 
 ### Referências:
