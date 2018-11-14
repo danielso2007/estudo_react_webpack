@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/danielso2007/estudo_react_webpack#readme",
   "devDependencies": {
+    "react-redux": "^5.1.1",
+    "redux": "^4.0.1",
     "standard-version": "^4.4.0"
   }
 }

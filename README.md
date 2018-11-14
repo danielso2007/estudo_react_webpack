@@ -85,6 +85,10 @@ https://github.com/baugarten/node-restful
 
 http://pm2.keymetrics.io/
 
+# Rotas com Reach Router - Ver
+
+https://reach.tech/router/example/basic
+
 # Padrão de mensagem de commit (CHANGELOG automatizados):
 
 O projeto terá o controle de versão e a geração do CHANGELOG automatizados com mensagens de confirmação  convencionais seguindo o padrão estabelecido por este documento.
