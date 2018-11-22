@@ -1,0 +1,3 @@
+#!/bin/bash
+echo Preparando arquivos par aprodução...
+npm run production

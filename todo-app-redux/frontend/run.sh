@@ -1,0 +1,3 @@
+#!/bin/bash
+echo Executando fronend DEV...
+npm run dev
