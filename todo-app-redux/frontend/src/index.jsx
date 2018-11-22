@@ -6,8 +6,9 @@ import reducers from "./main/reducers";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import promise from "redux-promise";
+import multi from 'redux-multi';
 
-const store = applyMiddleware(promise)(createStore)(reducers);
+const store = applyMiddleware(promise, multi)(createStore)(reducers);
 
 ReactDOM.render(
   <Provider store={store}>
