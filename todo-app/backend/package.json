@@ -5,19 +5,20 @@
   "main": "src/loader.js",
   "scripts": {
     "dev": "nodemon",
-    "production": "pm2 start src/loader.js --name todo-app"
+    "production": "pm2 start src/loader.js --name todo-app",
+    "production_show": "pm2 show todo-app",
+    "production_monit": "pm2 monit todo-app",
+    "production_stop": "pm2 stop todo-app"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "nodemon": "^1.18.6",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mongoose": "4.7.0",
     "node-restful": "0.2.5",
     "pm2": "2.1.5"
-  },
-  "devDependencies": {
-    "nodemon": "^1.18.6"
   }
 }
