@@ -122,13 +122,19 @@ _Algumas regras:_
 3. O tipo `fix` DEVE ser usado quando um commit representa uma correção de bug para seu aplicativo.
 4. Um escopo opcional pode ser fornecido após um tipo. Um escopo é uma frase que descreve uma seção da base de código entre parênteses, por exemplo, `fix(parser)`:
 
-### Gerando o CHANGELOG do projeto
-
-```sh
-npm run release -- --release-as 1.0.0
-```
-
 ### Referências:
 [Standard Version](https://github.com/conventional-changelog/standard-version/blob/master/README.md)
 
 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)
+
+# Gerando o CHANGELOG do projeto
+
+```sh
+npm run release -- --release-as 1.1.0  --dry-run
+
+npm run release -- --release-as patch --dry-run
+
+npm run release -- --release-as minor  --dry-run
+
+npm run release -- --release-as major  --dry-run
+```
