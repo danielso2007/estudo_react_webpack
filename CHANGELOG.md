@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [1.2.0](https://github.com/danielso2007/estudo_react_webpack/compare/v1.1.0...v1.2.0) (2019-03-08)
+
+
+### Features
+
+* Action Creator changeDescription. ([8cc85f9](https://github.com/danielso2007/estudo_react_webpack/commit/8cc85f9))
+* Action Creator de Pesquisa. ([a46cf1c](https://github.com/danielso2007/estudo_react_webpack/commit/a46cf1c))
+* Adicionar TODO. ([4d1ece7](https://github.com/danielso2007/estudo_react_webpack/commit/4d1ece7))
+* Aplicando Middleware (Redux-Multi). ([bb87024](https://github.com/danielso2007/estudo_react_webpack/commit/bb87024))
+* Aplicando Middleware (Redux-Promise). ([da8822a](https://github.com/danielso2007/estudo_react_webpack/commit/da8822a))
+* Aplicando Middleware (Redux-Thunk). ([26e3228](https://github.com/danielso2007/estudo_react_webpack/commit/26e3228))
+* Atualização do standard-version para 5.0.1. ([dc30937](https://github.com/danielso2007/estudo_react_webpack/commit/dc30937))
+* Conectar o TodoForm com Redux. ([b4c88dc](https://github.com/danielso2007/estudo_react_webpack/commit/b4c88dc))
+* Ex 01 - Integrando o React-Redux. ([2272301](https://github.com/danielso2007/estudo_react_webpack/commit/2272301))
+* Exclusão de TODOs. ([9b37644](https://github.com/danielso2007/estudo_react_webpack/commit/9b37644))
+* FInalizado estudo react com redux. ([8c428f8](https://github.com/danielso2007/estudo_react_webpack/commit/8c428f8))
+* Iniciando estudo de react-redux. ([2c78c31](https://github.com/danielso2007/estudo_react_webpack/commit/2c78c31))
+* Instalado o eslint. ([62ee06a](https://github.com/danielso2007/estudo_react_webpack/commit/62ee06a))
+* Limpar Formulário. ([d0c8625](https://github.com/danielso2007/estudo_react_webpack/commit/d0c8625))
+* Marcar como Concluído/Pendente. ([66bcfa2](https://github.com/danielso2007/estudo_react_webpack/commit/66bcfa2))
+* Preparando projeto pra redux e ajustando backend. ([83622ee](https://github.com/danielso2007/estudo_react_webpack/commit/83622ee))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/danielso2007/estudo_react_webpack/compare/v1.0.0...v1.1.0) (2018-11-13)
 
