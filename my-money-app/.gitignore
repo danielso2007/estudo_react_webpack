@@ -20,6 +20,7 @@ log.txt
 npm-debug.log*
 .idea/
 .sourcemaps/
+*.out
 .sass-cache/
 .tmp/
 .versions/
