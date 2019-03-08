@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [1.3.0](https://github.com/danielso2007/estudo_react_webpack/compare/v1.2.0...v1.3.0) (2019-03-08)
+
+
+### Features
+
+* Atualização do README.md. ([ac600f9](https://github.com/danielso2007/estudo_react_webpack/commit/ac600f9))
+* Melhorando a Action de Pesquisa. ([abcf4e2](https://github.com/danielso2007/estudo_react_webpack/commit/abcf4e2))
+
+
+
 # [1.2.0](https://github.com/danielso2007/estudo_react_webpack/compare/v1.1.0...v1.2.0) (2019-03-08)
 
 
