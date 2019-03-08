@@ -2,14 +2,14 @@ const restful = require('node-restful');
 const mongoose = restful.mongoose;
 
 const creditSchema = new mongoose.Schema({
-    name: {type: String, required: true},
-    value: {type: Number, min: 0, required: true}
+    name: {type: String, required: [true, 'Informe o nome do crétido!']},
+    value: {type: Number, min: 0, required: [true, 'Informe o valor do crétido!']}
 });
 
 const debtSchema = new mongoose.Schema({
-    name: {type: String, required: true},
-    value: {type: Number, min: 0, required: true},
-    status: {type: String, required: true, uppercase: true, enum: ['PAGO','PENDENTE','AGENDADO']}
+    name: {type: String, required: [true, 'Informe o nome do débito!']},
+    value: {type: Number, min: 0, required: [true, 'Informe o valor do débito!']},
+    status: {type: String, required: [true, 'Informe o status do débito!'], uppercase: true, enum: ['PAGO','PENDENTE','AGENDADO']}
 });
 
 const billingCycleSchema = new mongoose.Schema({

@@ -68,3 +68,21 @@ KillMode=process
 - Comece com `systemctl start my-money-app-backend`.
 - Ativá-lo para ser executado na inicialização com `systemctl enable my-money-app-backend`.
 - Veja os logs com `journalctl -u my-money-app-backend`
+
+## Teste REST POSTMAN
+- POST
+- Body: x-www-form-urlencoded
+- http://localhost:3003/api/billingCycles
+
+```
+name: Março/18
+month: 3
+year: 2018
+debts[0][name]: Condomínio
+debts[0][value]: 452.98
+debts[1][name]: Aluguel
+debts[1][value]: 1375.98
+credi[0][name]: Telefone
+debts[0][value]: 2369
+debts[0][status]: PAGO
+```
